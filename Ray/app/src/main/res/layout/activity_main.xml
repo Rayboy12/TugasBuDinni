@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ray"
+        android:scaleType="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tahu goreng"
+        android:textSize="42sp" />
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ikan Goreng"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_nama"
+        android:layout_marginTop="-27dp"
+        android:onClick="submit"
+        android:text="Submit"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tahu goreng"
+        android:textSize="20sp"
+        android:layout_below="@id/et_nama"/>
+
+</RelativeLayout>
